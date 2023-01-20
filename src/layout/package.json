@@ -1,0 +1,38 @@
+{
+  "name": "mainlayout",
+  "version": "1.0.0",
+  "description": "test layout",
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-router-dom": "^6.7.0",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.5",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "main": "./lib/cjs/Dashboard.js",
+  "module": "./lib/esm/Dashboard.js",
+  "types": "./lib/esm/Dashboard.d.ts"
+}
